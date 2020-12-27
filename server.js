@@ -27,9 +27,9 @@ app.use(methodOverride('_method'))
 
 app.get('/', (req, res) => {
 
-  res.redirect('/games')
+  // res.redirect('/games')
 
-  // res.send('Hello World test')
+  res.send('Hello World test')
 
 })
 
