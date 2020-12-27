@@ -26,7 +26,11 @@ app.use(express.json())
 app.use(methodOverride('_method'))
 
 app.get('/', (req, res) => {
-  res.send('Hello World test')
+
+  res.redirect('/games')
+
+  // res.send('Hello World test')
+
 })
 
 app.listen(PORT, () => {
