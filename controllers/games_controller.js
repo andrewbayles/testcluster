@@ -12,10 +12,18 @@ const isAuthenticated = (req, res, next) => {
 
 // NEW
 games.get('/new', (req, res) => {
-  res.render(
-    'games/new.ejs', {
-    currentUser: req.session.currentUser
-  })
+
+  if (req.session.currentUser) {
+
+    res.render(
+      'games/new.ejs', {
+      currentUser: req.session.currentUser
+    })
+
+  } else {
+    res.redirect('/sessions/new')
+  }
+
 })
 
 // EDIT
@@ -37,16 +45,20 @@ games.delete('/:id', (req, res) => {
 
 // SHOW
 games.get('/:id', (req, res) => {
-  if (req.session.currentUser) {
+
+  // if (req.session.currentUser) {
+
     Game.findById(req.params.id, (error, foundGame) => {
       res.render('games/show.ejs', {
         game: foundGame
         ,currentUser: req.session.currentUser
       })
     })
-  } else {
-    res.redirect('/sessions/new')
-  }
+
+  // } else {
+  //   res.redirect('/sessions/new')
+  // }
+
 })
 
 // UPDATE
@@ -93,19 +105,16 @@ games.get('/setup/seed', (req, res) => {
   Game.create(
     [
       {
-        name: 'grapefruit',
-        color: 'pink',
-        readyToEat: true
+        name: 'Contra',
+        color: 'red'
       },
       {
-        name: 'grape',
-        color: 'purple',
-        readyToEat: false
+        name: 'Chrono Trigger',
+        color: 'purple'
       },
       {
-        name: 'avocado',
-        color: 'green',
-        readyToEat: true
+        name: 'Mario Kart',
+        color: 'green'
       }
     ],
     (error, data) => {

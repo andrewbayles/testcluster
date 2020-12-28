@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <%- include ('../partials/head.ejs') %>
+  </head>
+  <body>
+    <nav>
+      <%- include ('../partials/nav.ejs') %>
+    </nav>
+    <div class="container">
+      <h1>Games Show Page</h1>
+      The <%=game.name%> is <%=game.color%>.
+
+
+      <!-- The following should appear only when a user is logged in. -->
+      <% if (currentUser) { %>
+        <button type="button" name="button"><a href="/games/<%=game._id%>/edit">Edit</a></button>
+        <br/>
+        <form action="/games/<%=game._id%>?_method=DELETE" method="POST">
+          <input type="submit" value="DELETE"/>
+        </form>
+        <br/>
+      <% } %>
+
+
+      <button type="button" name="button">
+        <a href="/games">Back</a>
+      </button>
+    </div>
+  </body>
+</html>

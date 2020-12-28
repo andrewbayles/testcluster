@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <%- include ('../partials/head.ejs') %>
+  </head>
+  <body>
+    <nav>
+      <%- include ('../partials/nav.ejs') %>
+    </nav>
+    <div class="container">
+      <h1>Games Edit Page</h1>
+      <form action="/games/<%=game.id%>?_method=PUT" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" value="<%=game.name%>" />
+        <label for="color">Color:</label>
+        <input type="text" name="color" value="<%=game.color%>" />
+        <br/>
+
+        <input type="submit" value="Submit">
+      <form>
+      <button type="button" name="button">
+        <a href="/games">Back</a>
+      </button>
+    </div>
+  </body>
+</html>

@@ -1,7 +1,8 @@
-<a href="/fruits" class="brand-logo left">Games</a>
+<a href="/games" class="brand-logo left">The Cartridge Crematorium</a>
 <ul class="right">
-  <li><a href="/fruits/new">Add a New Game</a></li>
+
   <% if (currentUser) {%>
+    <li><a href="/games/new">Add a New Game</a></li>
     <li>Welcome, <%= currentUser.username%></li>
     <li>
       <form class="" action="/sessions?_method=DELETE" method="post">
@@ -12,4 +13,5 @@
     <li><a href="/users/new">Sign Up</a> </li>
     <li><a href="/sessions/new">Log In</a> </li>
   <%}%>
+
 </ul>

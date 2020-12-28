@@ -5,7 +5,6 @@
 	</head>
 	<body>
 		<header>
-			<h1>Games Website Test</h1>
 			<nav>
         <%- include ('../partials/nav.ejs') %>
 
@@ -19,6 +18,21 @@
 				</ul> -->
 
 			</nav>
+
+			<div class="container">
+
+      <h1>Games Index Page</h1>
+	      <ul>
+	        <% for (let game of games ) { %>
+	          <li>
+	            <a href="/games/<%=game._id%>">
+	              <%= game.name %>
+							</a>
+	          </li>
+	       <% } %>
+	      </ul>
+    	</div>
+
 		</header>
 	</body>
 </html>
