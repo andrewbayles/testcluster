@@ -51,8 +51,8 @@ app.use('/sessions', sessionsController)
 
 // Routes
 app.get('/', (req, res) => {
-  //res.redirect('/games')
-  res.send('Hello World test')
+  res.redirect('/games')
+  // res.send('Hello World test')
 })
 
 // Listener
