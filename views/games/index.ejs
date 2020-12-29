@@ -23,13 +23,20 @@
 
       <h1>Games Index Page</h1>
 	      <ul>
+
 	        <% for (let game of games ) { %>
 	          <li>
-	            <a href="/games/<%=game._id%>">
-	              <%= game.name %>
-							</a>
+
+	            <a href="/games/<%=game._id%>"><%= game.title %></a><br/>
+							<%= game.system %><br/>
+							<%= game.summary %><br/>
+							<%= game.rating %><br/>
+							<%= game.price %><br/>
+							<%= game.quantity %>
+
 	          </li>
 	       <% } %>
+				 
 	      </ul>
     	</div>
 

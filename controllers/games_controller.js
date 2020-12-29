@@ -105,16 +105,28 @@ games.get('/setup/seed', (req, res) => {
   Game.create(
     [
       {
-        name: 'Contra',
-        color: 'red'
+        title: 'Contra',
+        system: 'NES',
+        summary: 'Lorum ipsum',
+        rating: '3',
+        price: '$26',
+        quantity: '4'
       },
       {
-        name: 'Chrono Trigger',
-        color: 'purple'
+        title: 'Chrono Trigger',
+        system: 'SNES',
+        summary: 'Time travel',
+        rating: '5',
+        price: '$30',
+        quantity: '2'
       },
       {
-        name: 'Mario Kart',
-        color: 'green'
+        title: 'Mario Kart',
+        system: 'SNES',
+        summary: 'Kart racing',
+        rating: '4',
+        price: '$25',
+        quantity: '5'
       }
     ],
     (error, data) => {

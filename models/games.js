@@ -1,8 +1,12 @@
 const mongoose = require('mongoose')
 
 const gameSchema = new mongoose.Schema({
-  name: { type: String, required: true },
-  color: { type: String, required: true }
+  title: { type: String, required: true },
+  system: { type: String, required: true }, // CHANGE
+  summary: { type: String, required: false }, // CHANGE
+  rating: { type: String, required: true }, // CHANGE, 1-5
+  price: { type: String, required: true }, // CHANGE, decimal number
+  quantity: { type: String, required: true } // CHANGE, number, zero behavior
 })
 
 const Game = mongoose.model('Game', gameSchema)

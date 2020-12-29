@@ -9,8 +9,12 @@
     </nav>
     <div class="container">
       <h1>Games Show Page</h1>
-      The <%=game.name%> is <%=game.color%>.
 
+      The <%=game.title%> is for the <%=game.system%>.<br/>
+      <%=game.summary%><br/>
+      Rating: <%=game.rating%><br/>
+      Price: <%=game.price%><br/>
+      Quantity: <%=game.quantity%><br/>
 
       <!-- The following should appear only when a user is logged in. -->
       <% if (currentUser) { %>

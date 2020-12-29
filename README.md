@@ -1,4 +1,6 @@
-# testcluster Initial Notes
+# Cartridge Crematorium Production Notes
+# https://voxyheroku.herokuapp.com/
+
 
 Steps to initialize the project working environment:
 
@@ -10,8 +12,9 @@ Steps to initialize the project working environment:
 
 DATABASE
 
-1. Initialize and connect the MongoDB server to the project.
-2. Determine fields to be stored for each game. (below)
+1. Initialize and connect the project to local server. DONE
+2. Connect the project to Heroku and MongoDB server. DONE
+3. Determine fields to be stored for each game. (below)
 
   - id
   - title
@@ -20,6 +23,7 @@ DATABASE
   - rating
   - price
   - quantity
+
 
 FRONTEND
 
@@ -31,3 +35,6 @@ FRONTEND
 3. Collect external content (screenshots, game titles) to be used onsite.
 
 ** SITE SOURCE OF GAME CONTENT HERE **
+
+
+OVERCOME CHALLENGES
