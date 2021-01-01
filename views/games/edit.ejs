@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <%- include ('../partials/head.ejs') %>
-  </head>
+
+  <%- include ('../partials/head.ejs') %>
+
   <body>
-    <nav>
-      <%- include ('../partials/nav.ejs') %>
-    </nav>
+
     <div class="container">
+
+      <header>
+        <%- include ('../partials/nav.ejs') %>
+      </header>
+
       <h1>Games Edit Page</h1>
 
       <form action="/games/<%=game.id%>?_method=PUT" method="POST">
@@ -38,6 +41,10 @@
       <button type="button" name="button">
         <a href="/games">Back</a>
       </button>
+
     </div>
+
+    <%- include ('../partials/footer.ejs') %>
+
   </body>
 </html>

@@ -1,3 +1,11 @@
+/*
+605963 Dark Grey
+C0C1C0 Med Grey
+E1DDD3 Light Grey
+9D856D Light Brown
+4B2D20 Dark Brown
+*/
+
 h1 {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   font-size: 24px;
@@ -41,4 +49,47 @@ pre {
   font-variant: normal;
   font-weight: 400;
   line-height: 18.5714px;
+}
+
+body {
+  /* background-color: #E1DDD3; */
+  background-image: linear-gradient(45deg, #e1ddd3 45.45%, #c0c1c0 45.45%, #c0c1c0 50%, #e1ddd3 50%, #e1ddd3 95.45%, #c0c1c0 95.45%, #c0c1c0 100%);
+  background-size: 31.11px 31.11px;
+}
+
+#topmost-margin {
+  height: 60px;
+}
+
+#bottommost-margin {
+  height: 20px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  background-color: #9D856D;
+
+}
+
+header {
+  padding: 20px;
+  height: 60px;
+}
+
+#nav-buttons {
+  position: relative;
+  float: right;
+  width: 200px;
+}
+
+#main-title {
+  float: left;
+  position: relative;
+  width: 400px;
+}
+
+#main-title a {
+  color: #E1DDD3;
+  text-decoration: none;
 }

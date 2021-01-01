@@ -27,7 +27,7 @@ DATABASE
 
 FRONTEND
 
-1.
+1. Establish early, basic endpoints for database content.
 2. Apply sitewide CSS theme.
 
 ** MAKE NOTE OF CSS SOURCE HERE **

@@ -11,7 +11,8 @@ const db = mongoose.connection
 const PORT = process.env.PORT || 3003
 const MONGODB_URI = process.env.MONGODB_URI
 
-// MIDDLEWARE (may not be needed)
+// MIDDLEWARE
+app.use(express.static('assets'))
 app.use(methodOverride('_method'))
 app.use(express.urlencoded({ extended: true }))
 app.use(

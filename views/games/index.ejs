@@ -1,45 +1,44 @@
 <!DOCTYPE html>
-<html>
-	<head>
-    <%- include ('../partials/head.ejs') %>
-	</head>
+<html lang="en" dir="ltr">
+
+  <%- include ('../partials/head.ejs') %>
+
 	<body>
-		<header>
-			<nav>
-        <%- include ('../partials/nav.ejs') %>
 
-				<!-- <ul>
+		<div id="topmost-margin">
+		</div>
+
+		<div class="container">
+
+			<header>
+	      <%- include ('../partials/nav.ejs') %>
+			</header>
+
+			<h1>Games Index Page</h1>
+
+			<ul>
+
+				<% for (let game of games ) { %>
 					<li>
-						<a href="/authors">Authors</a>
+
+						<a href="/games/<%=game._id%>"><%= game.title %></a><br/>
+						<%= game.system %><br/>
+						<%= game.summary %><br/>
+						<%= game.rating %><br/>
+						<%= game.price %><br/>
+						<%= game.quantity %>
+
 					</li>
-					<li>
-						<a href="/articles">Articles</a>
-					</li>
-				</ul> -->
+			 <% } %>
 
-			</nav>
+			</ul>
 
-			<div class="container">
+		</div>
 
-      <h1>Games Index Page</h1>
-	      <ul>
+		<%- include ('../partials/footer.ejs') %>
 
-	        <% for (let game of games ) { %>
-	          <li>
+		<div id="bottommost-margin">
+		</div>
 
-	            <a href="/games/<%=game._id%>"><%= game.title %></a><br/>
-							<%= game.system %><br/>
-							<%= game.summary %><br/>
-							<%= game.rating %><br/>
-							<%= game.price %><br/>
-							<%= game.quantity %>
-
-	          </li>
-	       <% } %>
-				 
-	      </ul>
-    	</div>
-
-		</header>
 	</body>
 </html>

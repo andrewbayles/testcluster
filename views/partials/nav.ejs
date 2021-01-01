@@ -1,17 +1,21 @@
-<a href="/games" class="brand-logo left">The Cartridge Crematorium</a>
-<ul class="right">
+<nav>
 
-  <% if (currentUser) {%>
-    <li><a href="/games/new">Add a New Game</a></li>
-    <li>Welcome, <%= currentUser.username%></li>
-    <li>
-      <form class="" action="/sessions?_method=DELETE" method="post">
-        <input type="submit" value="Log Out" class="btn-small red">
-      </form>
-    </li>
-  <%} else {%>
-    <li><a href="/users/new">Sign Up</a> </li>
-    <li><a href="/sessions/new">Log In</a> </li>
-  <%}%>
+  <h1 id="main-title"><a href="/games" class="brand-logo left">The Cartridge Crematorium</a></h1>
 
-</ul>
+  <div id="nav-buttons">
+
+    <% if (currentUser) {%>
+      <p><a href="/games/new">Add a New Game</a></p>
+      <p>Welcome, <%= currentUser.username%></p>
+
+        <form class="" action="/sessions?_method=DELETE" method="post">
+          <input type="submit" value="Log Out" class="btn-small red">
+        </form>
+
+    <%} else {%>
+      <p><a href="/users/new">Sign Up</a><a href="/sessions/new">Log In</a></p>
+    <%}%>
+
+  </div>
+
+</nav>
