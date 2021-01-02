@@ -5,15 +5,33 @@
   <div id="nav-buttons">
 
     <% if (currentUser) {%>
-      <p><a href="/games/new">Add a New Game</a></p>
+
+      <a href="/games/new">
+        <div class="banner-button">
+          Add a New Game
+        </div>
+      </a>
+
+      <form class="" action="/sessions?_method=DELETE" method="post">
+        <input type="submit" value="Log Out" class="banner-button">
+      </form>
+
       <p>Welcome, <%= currentUser.username%></p>
 
-        <form class="" action="/sessions?_method=DELETE" method="post">
-          <input type="submit" value="Log Out" class="btn-small red">
-        </form>
-
     <%} else {%>
-      <p><a href="/users/new">Sign Up</a><a href="/sessions/new">Log In</a></p>
+
+      <a href="/users/new">
+        <div class="banner-button">
+          Sign Up
+        </div>
+      </a>
+
+      <a href="/sessions/new">
+        <div class="banner-button">
+          Log In
+        </div>
+      </a>
+
     <%}%>
 
   </div>

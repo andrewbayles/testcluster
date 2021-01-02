@@ -6,6 +6,10 @@ E1DDD3 Light Grey
 4B2D20 Dark Brown
 */
 
+a {
+  color: #000;
+}
+
 h1 {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   font-size: 24px;
@@ -69,6 +73,13 @@ body {
   width: 80%;
   margin: auto;
   background-color: #9D856D;
+  border-radius: 5px;
+
+  /*
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(255,255,255,1);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(255,255,255,1);
+  box-shadow: 0px 0px 4px 0px rgba(255,255,255,1);
+  */
 
 }
 
@@ -83,6 +94,10 @@ header {
   width: 200px;
 }
 
+#nav-buttons form {
+
+}
+
 #main-title {
   float: left;
   position: relative;
@@ -92,4 +107,20 @@ header {
 #main-title a {
   color: #E1DDD3;
   text-decoration: none;
+}
+
+.banner-button {
+  display: inline-block;
+  background-color: #C0C1C0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  padding: 12px;
+  border-radius: 3px;
+  font-size: 12px;
+  border: 1px solid #DDD;
+}
+
+.banner-button:hover {
+
 }

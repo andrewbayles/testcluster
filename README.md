@@ -29,12 +29,23 @@ FRONTEND
 
 1. Establish early, basic endpoints for database content.
 2. Apply sitewide CSS theme.
+  2a. Determine overall site color scheme using http://colormind.io/
+  2b. Apply beginning site CSS theme (basic table structure, background)
 
 ** MAKE NOTE OF CSS SOURCE HERE **
 
-3. Collect external content (screenshots, game titles) to be used onsite.
+3. Collect external content (screenshots, game titles) for use with site.
+  3a. Smaller NES/SNES cartridge images
+  3b. Larger NES/SNES cartridge titles
 
-** SITE SOURCE OF GAME CONTENT HERE **
+  ** SITE SOURCE OF GAME CONTENT HERE **
 
 
 OVERCOME CHALLENGES
+
+1. I learned through some research that CSS files cannot be directly imported into an express-mounted site without first including express.static as middleware. This took some research.
+
+
+NEW DISCOVERIES
+
+1. I learned that https://stripesgenerator.com/ is a beautiful source for generating diagonal-striped backgrounds of all colors and widths.
