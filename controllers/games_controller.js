@@ -109,7 +109,9 @@ games.get('/setup/seed', (req, res) => {
   Game.create(
     [
       {
-        title: 'Contra',
+        title: 'Bionic Commando',
+        smallimage: 'bionic-commando.png',
+        largeimage: '',
         system: 'NES',
         summary: 'Lorum ipsum',
         rating: '3',
@@ -117,17 +119,21 @@ games.get('/setup/seed', (req, res) => {
         quantity: '4'
       },
       {
-        title: 'Chrono Trigger',
-        system: 'SNES',
-        summary: 'Time travel',
+        title: 'Castlevania',
+        smallimage: 'castlevania.png',
+        largeimage: '',
+        system: 'NES',
+        summary: 'Vampire hunting',
         rating: '5',
         price: '$30',
         quantity: '2'
       },
       {
-        title: 'Mario Kart',
-        system: 'SNES',
-        summary: 'Kart racing',
+        title: 'Double Dragon',
+        smallimage: 'double-dragon.png',
+        largeimage: '',
+        system: 'NES',
+        summary: 'Street brawler',
         rating: '4',
         price: '$25',
         quantity: '5'
