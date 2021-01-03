@@ -63,11 +63,13 @@ games.get('/:id', (req, res) => {
 
 // UPDATE
 games.put('/:id', (req, res) => {
-  if (req.body.readyToEat === 'on') {
-    req.body.readyToEat = true
-  } else {
-    req.body.readyToEat = false
-  }
+
+  // if (req.body.readyToEat === 'on') {
+  //   req.body.readyToEat = true
+  // } else {
+  //   req.body.readyToEat = false
+  // }
+
   Game.findByIdAndUpdate(
     req.params.id,
     req.body,
@@ -80,11 +82,13 @@ games.put('/:id', (req, res) => {
 
 // CREATE
 games.post('/', (req, res) => {
-  if (req.body.readyToEat === 'on') {
-    req.body.readyToEat = true
-  } else {
-    req.body.readyToEat = false
-  }
+
+  // if (req.body.readyToEat === 'on') {
+  //   req.body.readyToEat = true
+  // } else {
+  //   req.body.readyToEat = false
+  // }
+
   Game.create(req.body, (error, createdGame) => {
     res.redirect('/games')
   })

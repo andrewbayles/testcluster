@@ -5,6 +5,9 @@
 
   <body>
 
+    <div id="topmost-margin">
+		</div>
+
     <div class="container">
 
       <header>
@@ -13,11 +16,13 @@
 
       <h1>Games Show Page</h1>
 
-      The <%=game.title%> is for the <%=game.system%>.<br/>
+      <%=game.title%> is for the <%=game.system%>.<br/>
       <%=game.summary%><br/>
       Rating: <%=game.rating%><br/>
       Price: <%=game.price%><br/>
       Quantity: <%=game.quantity%><br/>
+
+      Image: <%=game.largeimage%>
 
       <!-- The following should appear only when a user is logged in. -->
       <% if (currentUser) { %>

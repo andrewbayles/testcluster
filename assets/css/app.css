@@ -8,6 +8,7 @@ E1DDD3 Light Grey
 
 a {
   color: #000;
+  text-decoration: none;
 }
 
 h1 {
@@ -85,27 +86,31 @@ body {
 
 header {
   padding: 20px;
-  height: 60px;
+  height: 120px;
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('/images/backgrounds/banner-bg.jpg');
+  /* background-position: center top; */
 }
 
 #nav-buttons {
   position: relative;
   float: right;
-  width: 200px;
+  width: 194px;
 }
 
 #nav-buttons form {
-
+  display: inline-block;
 }
 
 #main-title {
   float: left;
   position: relative;
-  width: 400px;
+
+  /* width: 400px; */
+
 }
 
 #main-title a {
-  color: #E1DDD3;
+  color: #FFF;
   text-decoration: none;
 }
 
@@ -115,12 +120,48 @@ header {
   text-transform: uppercase;
   text-decoration: none;
   font-family: Arial, sans-serif;
-  padding: 12px;
+  padding: 10px;
   border-radius: 3px;
-  font-size: 12px;
+  font-size: 10px;
   border: 1px solid #DDD;
+  cursor: pointer;
+  float: right;
+  margin-left: 8px;
 }
 
 .banner-button:hover {
 
+}
+
+#banner-name {
+  text-align: right;
+  color: #FFF;
+}
+
+.game-bar {
+  display: flex;
+}
+
+.game-title {
+
+}
+
+.game-system {
+
+}
+
+.game-summary {
+
+}
+
+.game-rating {
+
+}
+
+.game-price {
+
+}
+
+.game-quantity {
+  
 }

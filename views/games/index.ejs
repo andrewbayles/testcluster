@@ -16,22 +16,39 @@
 
 			<h1>Games Index Page</h1>
 
-			<ul>
+			<% for (let game of games ) { %>
+				<div class="game-bar">
 
-				<% for (let game of games ) { %>
-					<li>
+					<div class="game-title">
+						<a href="/games/<%=game._id%>"><%= game.title %></a>
+					</div>
 
-						<a href="/games/<%=game._id%>"><%= game.title %></a><br/>
-						<%= game.system %><br/>
-						<%= game.summary %><br/>
-						<%= game.rating %><br/>
-						<%= game.price %><br/>
+					<div class="game-smallimage">
+
+					</div>
+
+					<div class="game-system">
+						<%= game.system %>
+					</div>
+
+					<div class="game-summary">
+						<%= game.summary %>
+					</div>
+
+					<div class="game-rating">
+						<%= game.rating %>
+					</div>
+
+					<div class="game-price">
+						<%= game.price %>
+					</div>
+
+					<div class="game-quantity">
 						<%= game.quantity %>
+					</div>
 
-					</li>
-			 <% } %>
-
-			</ul>
+				</div>
+		 <% } %>
 
 		</div>
 

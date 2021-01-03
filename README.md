@@ -49,3 +49,5 @@ OVERCOME CHALLENGES
 NEW DISCOVERIES
 
 1. I learned that https://stripesgenerator.com/ is a beautiful source for generating diagonal-striped backgrounds of all colors and widths.
+
+2. ** INCLUDE INFO ABOUT DARKENING BANNER IMAGE VIA CSS **
