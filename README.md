@@ -18,6 +18,8 @@ DATABASE
 
   - id
   - title
+  - smallimage
+  - largeimage
   - system
   - summary
   - rating
@@ -30,7 +32,8 @@ FRONTEND
 1. Establish early, basic endpoints for database content.
 2. Apply sitewide CSS theme.
   2a. Determine overall site color scheme using http://colormind.io/
-  2b. Apply beginning site CSS theme (basic table structure, background)
+  2b. Apply early overall sitewide CSS theme (basic table structure, background).
+  2c. Complete CSS theme and position for site banner.
 
 ** MAKE NOTE OF CSS SOURCE HERE **
 
@@ -39,6 +42,11 @@ FRONTEND
   3b. Larger NES/SNES cartridge titles
 
   ** SITE SOURCE OF GAME CONTENT HERE **
+
+
+ONGOING ISSUES
+
+1. Dispite switching the order of the HTML for the "Log Out" and "Add a New Game" buttons, they refused to move into my intended position (Add New Game first) on the page.
 
 
 OVERCOME CHALLENGES

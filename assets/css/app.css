@@ -138,16 +138,49 @@ header {
   color: #FFF;
 }
 
+#game-list {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
 .game-bar {
+  background: rgb(205,205,205);
+  background: linear-gradient(0deg, rgba(205,205,205,1) 0%, rgba(226,226,226,1) 100%);
+  border-bottom: 2px dashed #CCC;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  /* font-family: Arial, sans-serif; */
+  font-size: 20px;
   display: flex;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.game-bar:hover {
+  background: #DEDEDE;
+}
+
+.game-bar span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
 }
 
 .game-title {
+  width: 20%;
+  text-align: right;
+}
+
+.game-smallimage {
 
 }
 
 .game-system {
-
+  width: 10%;
 }
 
 .game-summary {
@@ -163,5 +196,5 @@ header {
 }
 
 .game-quantity {
-  
+
 }
