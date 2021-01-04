@@ -2,6 +2,11 @@
 # https://voxyheroku.herokuapp.com/
 
 
+TO-DO
+
+Add image uploading capability from local file to new cart page.
+
+
 Steps to initialize the project working environment:
 
 1. Link the project's Git repo to the project's Heroku server. DONE
@@ -20,6 +25,7 @@ DATABASE
   - title
   - smallimage
   - largeimage
+  - genre
   - system
   - summary
   - rating
@@ -34,6 +40,8 @@ FRONTEND
   2a. Determine overall site color scheme using http://colormind.io/
   2b. Apply early overall sitewide CSS theme (basic table structure, background).
   2c. Complete CSS theme and position for site banner.
+3. Apply individual page CSS themes.
+  3a.
 
 ** MAKE NOTE OF CSS SOURCE HERE **
 

@@ -14,16 +14,27 @@
         <%- include ('../partials/nav.ejs') %>
       </header>
 
-      <h1>New User</h1>
+      <div id="login-signup-main">
 
-      <form action="/users" method="POST">
-        <label for="name">User Name:</label>
-        <input type="text" name="username" required/>
-        <label for="color">Password:</label>
-        <input type="password" name="password" />
-        <br>
-        <input type="submit" value="Submit">
-      <form>
+        <form action="/users" method="POST">
+
+          <fieldset class="user-info">
+
+            <h2>New User</h2>
+
+            <label for="username">User Name</label>
+            <input type="text" name="username" required/>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" />
+
+          </fieldset>
+
+          <input type="submit" value="SUBMIT">
+
+        </form>
+
+      </div>
 
     </div>
 

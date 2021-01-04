@@ -14,9 +14,32 @@
 	      <%- include ('../partials/nav.ejs') %>
 			</header>
 
-			<h1>Games Index Page</h1>
+			<div id="index-intro">
+				<h2>Welcome!</h2>
+				<p>Greetings, and welcome all to The Cartridge Crematorium, an ongoing catalog and source of older NES and SNES titles. Feel free to browse, buy, and enjoy! Our available titles are listed below, and further information can be gathered by selecting each individually.</p>
+			</div>
 
-			<div id="game-list-head">
+			<div id="game-head-cont">
+
+			<div id="game-head">
+				<div class="game-head-title">
+					<p>Title</p>
+				</div>
+				<div class="game-head-smallimage">
+				</div>
+				<div class="game-head-system">
+					<p>System</p>
+				</div>
+				<div class="game-head-rating">
+					<p>Rating</p>
+				</div>
+				<div class="game-head-price">
+					<p>Price</p>
+				</div>
+				<div class="game-head-quantity">
+					<p>Quantity</p>
+				</div>
+			</div>
 
 			</div>
 
@@ -35,6 +58,10 @@
 							<div class="game-smallimage">
 								<span><img src="/images/nes-carts/<%= game.smallimage %>" alt="<%= game.title %>" /></span>
 							</div>
+
+							<!--<div class="game-genre">
+								<span><%= game.genre %></span>
+							</div>-->
 
 							<div class="game-system">
 								<span><%= game.system %></span>

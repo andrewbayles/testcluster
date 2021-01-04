@@ -20,6 +20,15 @@ h1 {
   line-height: 26.4px;
 }
 
+h2 {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+
 h3 {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   font-size: 14px;
@@ -127,15 +136,60 @@ header {
   cursor: pointer;
   float: right;
   margin-left: 8px;
+  transition: 0.2s ease-in-out;
 }
 
 .banner-button:hover {
-
+  background-color: #2098D1;
+  color: white;
 }
 
 #banner-name {
   text-align: right;
   color: #FFF;
+}
+
+#index-intro {
+  width: 90%;
+  margin: auto;
+  color: #EEE;
+}
+
+#index-intro p {
+  line-height: 26px;
+}
+
+#game-head-cont {
+  width: 90%;
+  margin: auto;
+}
+
+#game-head {
+  width: 83%;
+  margin: auto;
+  background-color: #C2C2C2;
+  display: flex;
+  height: 50px;
+  line-height: 100px;
+  text-align: center;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 7%;
+  color: #444;
+}
+
+.game-head-title {
+  width: 30%;
+  text-align: right;
+}
+
+.game-head-smallimage {
+  max-width: 200px;
+  width: 120px;
+}
+
+.game-head-system {
+  width: 10%;
 }
 
 #game-list {
@@ -147,17 +201,26 @@ header {
 .game-bar {
   background: rgb(205,205,205);
   background: linear-gradient(0deg, rgba(205,205,205,1) 0%, rgba(226,226,226,1) 100%);
+
+  /*
+  -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+  */
+
   border-bottom: 2px dashed #CCC;
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   /* font-family: Arial, sans-serif; */
   font-size: 20px;
   display: flex;
-  height: 80px;
-  line-height: 80px;
+  height: 100px;
+  line-height: 100px;
   text-align: center;
   justify-content: space-between;
   padding-left: 10%;
   padding-right: 10%;
+  color: #444;
 }
 
 .game-bar:hover {
@@ -171,11 +234,26 @@ header {
 }
 
 .game-title {
-  width: 20%;
+  width: 30%;
   text-align: right;
+  font-weight: bold;
 }
 
 .game-smallimage {
+  max-width: 200px;
+  width: 100px;
+}
+
+.game-smallimage img {
+  display: block;
+  max-width: 200px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+  top: -10px;
+}
+
+.game-genre {
 
 }
 
@@ -196,5 +274,85 @@ header {
 }
 
 .game-quantity {
+  width: 20px;
+}
 
+#login-signup-main {
+  margin: auto;
+  width: 40%;
+  padding-bottom: 40px;
+}
+
+#login-signup-main h2 {
+  margin-top: 0;
+}
+
+#login-signup-main label {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 14px;
+}
+
+#login-signup-main input[type=submit] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+
+  height: 50px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #555;
+  border: 0px;
+  transition: 0.2s ease-in-out;
+
+  appearance: push-button;
+  user-select: none;
+  white-space: pre;
+  align-items: flex-start;
+  text-align: center;
+  cursor: pointer;
+  background-color: #DDD;
+  box-sizing: border-box;
+  border-width: 2px;
+
+  text-transform: capitalize;
+
+  border: 1px solid #EEE;
+  border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+}
+
+#login-signup-main input[type=submit]:hover {
+  background-color: #2098D1;
+  color: white;
+}
+
+fieldset.user-info {
+  border: 1px solid #fff;
+  padding: 20px;
+  margin: 20px 0;
+  background-image: linear-gradient(45deg, #ffffff 25%, #f7f7f7 25%, #f7f7f7 50%, #ffffff 50%, #ffffff 75%, #f7f7f7 75%, #f7f7f7 100%);
+  background-size: 56.57px 56.57px;
+  color: #777;
+}
+
+.user-info legend {
+  padding: 0 10px;
+  /* font-family: 'Oswald'; */
+  font-weight: 500;
+  /* color: var(--purple); */
+}
+
+.user-info label {
+  display: block;
+  text-align: right;
+}
+
+.user-info input, .user-info textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid var(--dusty-blue);
+  background-color: #FFF !important;
 }

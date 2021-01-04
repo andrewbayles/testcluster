@@ -112,6 +112,7 @@ games.get('/setup/seed', (req, res) => {
         title: 'Bionic Commando',
         smallimage: 'bionic-commando.png',
         largeimage: '',
+        genre: 'Action-adventure',
         system: 'NES',
         summary: 'Lorum ipsum',
         rating: '3',
@@ -122,6 +123,7 @@ games.get('/setup/seed', (req, res) => {
         title: 'Castlevania',
         smallimage: 'castlevania.png',
         largeimage: '',
+        genre: 'Action-adventure',
         system: 'NES',
         summary: 'Vampire hunting',
         rating: '5',
@@ -132,11 +134,67 @@ games.get('/setup/seed', (req, res) => {
         title: 'Double Dragon',
         smallimage: 'double-dragon.png',
         largeimage: '',
+        genre: 'Side-scrolling beat-em up',
         system: 'NES',
         summary: 'Street brawler',
         rating: '4',
         price: '$25',
         quantity: '5'
+      },
+      {
+        title: 'Faxanadu',
+        smallimage: 'faxanadu.png',
+        largeimage: '',
+        genre: 'Action RPG',
+        system: 'NES',
+        summary: 'Side-scrolling adventure game',
+        rating: '2',
+        price: '$22',
+        quantity: '10'
+      },
+      {
+        title: 'Final Fantasy',
+        smallimage: 'final-fantasy.png',
+        largeimage: '',
+        genre: 'Classic top-down RPG',
+        system: 'NES',
+        summary: 'Role playing game',
+        rating: '5',
+        price: '$45',
+        quantity: '7'
+      },
+      {
+        title: 'The Guardian Legend',
+        smallimage: 'guardian-legend.png',
+        largeimage: '',
+        genre: 'Action-adventure explorer',
+        system: 'NES',
+        summary: 'Action-adventure explorer-shooter title',
+        rating: '3',
+        price: '$20',
+        quantity: '14'
+      },
+      {
+        title: 'Metal Gear',
+        smallimage: 'metal-gear.png',
+        largeimage: '',
+        genre: 'Military explorer adventure',
+        system: 'NES',
+        summary: 'Top-down military adventure game',
+        rating: '4',
+        price: '$28',
+        quantity: '5'
+      },
+      {
+        title: 'Skate or Die',
+        smallimage: 'skate-or-die.png',
+        largeimage: '',
+        genre: 'Competitive skating',
+        system: 'NES',
+        summary: 'Competitive skating game',
+        rating: '3',
+        price: '$28',
+        quantity: '6'
       }
     ],
     (error, data) => {
