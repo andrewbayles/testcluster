@@ -41,13 +41,15 @@ FRONTEND
   2b. Apply early overall sitewide CSS theme (basic table structure, background).
   2c. Complete CSS theme and position for site banner.
 3. Apply individual page CSS themes.
-  3a.
+  3a. Created CSS for front page.
+  3b. Created CSS for Login and New User pages.
 
 ** MAKE NOTE OF CSS SOURCE HERE **
 
 3. Collect external content (screenshots, game titles) for use with site.
   3a. Smaller NES/SNES cartridge images
   3b. Larger NES/SNES cartridge titles
+4. Add games' summaries (source: wikipedia.org) to the records of each game.
 
   ** SITE SOURCE OF GAME CONTENT HERE **
 

@@ -14,28 +14,62 @@
         <%- include ('../partials/nav.ejs') %>
       </header>
 
-      <h1>Games Show Page</h1>
+      <div id="show-main">
 
-      <%=game.title%><br/>
-      <%=game.genre%><br/>
-      <%=game.system%><br/>
-      <%=game.summary%><br/>
-      Rating: <%=game.rating%><br/>
-      Price: <%=game.price%><br/>
-      Quantity: <%=game.quantity%><br/>
+        <div id="show-col-1">
 
-      Image: <%=game.largeimage%>
+          <div id="show-title">
+            <p><%=game.title%></p>
+          </div>
+
+          <div id="show-genre-system">
+            <div id="show-genre">
+              <p><%=game.genre%></p>
+            </div>
+            <div id="show-system">
+              <p><%=game.system%></p>
+            </div>
+          </div>
+
+          <div id="show-summary">
+            <p><%=game.summary%></p>
+          </div>
+
+        </div>
+
+        <div id="show-col-2">
+
+          <div id="show-image">
+            <img src="/images/nes-carts/<%= game.smallimage %>" alt="<%= game.title %>" />
+          </div>
+
+          <div class="show-bar">
+            <p><%=game.rating%></p>
+          </div>
+
+          <div class="show-bar">
+            <p>$<%=game.price%></p>
+          </div>
+
+          <div class="show-bar">
+            <p><%=game.quantity%></p>
+          </div>
+
+        </div>
+
+      </div>
 
       <!-- The following should appear only when a user is logged in. -->
       <% if (currentUser) { %>
-        <button type="button" name="button"><a href="/games/<%=game._id%>/edit">Edit</a></button>
-        <br/>
-        <form action="/games/<%=game._id%>?_method=DELETE" method="POST">
-          <input type="submit" value="DELETE"/>
-        </form>
-        <br/>
-      <% } %>
+        <div id="action-bar">
 
+          <button type="button" name="button"><a href="/games/<%=game._id%>/edit">Edit</a></button>
+          <form action="/games/<%=game._id%>?_method=DELETE" method="POST">
+            <input type="submit" value="DELETE"/>
+          </form>
+
+        </div>
+      <% } %>
 
       <button type="button" name="button">
         <a href="/games">Back</a>

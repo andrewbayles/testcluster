@@ -14,48 +14,61 @@
         <%- include ('../partials/nav.ejs') %>
       </header>
 
-      <h1>Games New Page</h1>
+      <div id="new-main">
 
-      <form action="/games" method="POST">
+        <h1>New Game</h1>
 
-        <label for="title">Title:</label>
-        <input type="text" name="title" required />
+        <form action="/games" method="POST">
 
-        <label for="smallimage">Small Image:</label>
-        <input type="text" name="smallimage" />
+          <!-- Basic text line -->
+          <label for="title">Title:</label>
+          <input type="text" name="title" required />
 
-        <label for="largeimage">Large Image:</label>
-        <input type="text" name="largeimage" />
+          <!-- Text line for file name with browse button -->
+          <label for="smallimage">Small Image:</label>
+          <input type="text" name="smallimage" />
 
-        <label for="genre">Genre:</label>
-        <input type="text" name="genre" />
+          <!-- Text line for file name with browse button -->
+          <label for="largeimage">Large Image:</label>
+          <input type="text" name="largeimage" />
 
-        <label for="system">System:</label>
-        <input type="text" name="system" />
+          <!-- Dropdown with genre listings -->
+          <label for="genre">Genre:</label>
+          <input type="text" name="genre" />
 
-        <label for="summary">Summary:</label>
-        <input type="text" name="summary" />
+          <!-- Dropdown with system listings -->
+          <label for="system">System:</label>
+          <input type="text" name="system" />
 
-        <label for="rating">Rating:</label>
-        <input type="text" name="rating" />
+          <!-- Large text box for extended input -->
+          <label for="summary">Summary:</label>
+          <textarea id="summary" name="summary"></textarea>
 
-        <label for="price">Price:</label>
-        <input type="text" name="price" />
+          <!-- Dropdown with numeric listing from 1-5 -->
+          <label for="rating">Rating:</label>
+          <input type="text" name="rating" />
 
-        <label for="quantity">Quantity:</label>
-        <input type="text" name="quantity" />
-        <br/>
+          <!-- Text line with numeric input -->
+          <label for="price">Price:</label>
+          <p>$</p><input type="text" name="price" />
 
-        <!-- <div>
-          <label for="readyToEat">
-            <input type="checkbox" id="readyToEat" name="readyToEat" />
-            <span>Is Ready to Eat</span>
-          </label>
-        </div>
-        <br/> -->
+          <!-- Text line with numeric input -->
+          <label for="quantity">Quantity:</label>
+          <input type="text" name="quantity" />
+          <br/>
 
-        <input type="submit" value="Submit">
-      <form>
+          <!-- <div>
+            <label for="readyToEat">
+              <input type="checkbox" id="readyToEat" name="readyToEat" />
+              <span>Is Ready to Eat</span>
+            </label>
+          </div>
+          <br/> -->
+
+          <input type="submit" value="Submit">
+        <form>
+
+      </div>
 
     </div>
 
