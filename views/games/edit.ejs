@@ -16,54 +16,79 @@
 
       <div id="edit-main">
 
-        <h2>Edit Game</h2>
-
         <form action="/games/<%=game.id%>?_method=PUT" method="POST">
 
-          <!-- Basic text line -->
-          <label for="title">Title:</label>
-          <input type="text" name="title" value="<%=game.title%>" />
+          <div id="edit-col-1">
 
-          <!-- Text line for file name with browse button -->
-          <label for="smallimage">Small Image:</label>
-          <input type="text" name="smallimage" value="<%=game.smallimage%>" />
-          <img src="/images/nes-carts/<%= game.smallimage %>" />
+            <h2>Edit Game</h2>
 
-          <!-- Text line for file name with browse button -->
-          <label for="largeimage">Large Image:</label>
-          <input type="text" name="largeimage" value="<%=game.largeimage%>" />
+            <!-- Basic text line -->
+            <div id="edit-title">
+              <p><label for="title">Title</label></p>
+              <input type="text" name="title" value="<%=game.title%>" />
+            </div>
 
-          <!-- Dropdown with genre listings -->
-          <label for="genre">Genre:</label>
-          <input type="text" name="genre" value="<%=game.genre%>" />
+            <!-- Dropdown with genre listings -->
+            <div id="edit-genre">
+              <p><label for="genre">Genre</label></p>
+              <input type="text" name="genre" value="<%=game.genre%>" />
+            </div>
 
-          <!-- Dropdown with system listings -->
-          <label for="system">System:</label>
-          <input type="text" name="system" value="<%=game.system%>" />
+            <!-- Dropdown with system listings -->
+            <!-- <label for="system">System:</label>
+            <input type="text" name="system" value="<%=game.system%>" /> -->
 
-          <!-- Large text box for extended input -->
-          <label for="summary">Summary:</label>
-          <textarea id="summary" name="summary"><%=game.summary%></textarea>
+            <!-- Large text box for extended input -->
+            <div id="edit-summary">
+              <p><label for="summary">Summary</label></p>
+              <textarea id="summary" name="summary"><%=game.summary%></textarea>
+            </div>
 
-          <!-- Dropdown with numeric listing from 1-5 -->
-          <label for="rating">Rating:</label>
-          <input type="text" name="rating" value="<%=game.rating%>" />
+          </div>
 
-          <!-- Text line with numeric input -->
-          <label for="price">Price:</label>
-          <p>$</p><input type="text" name="price" value="<%=game.price%>" />
+          <div id="edit-col-2">
 
-          <!-- Text line with numeric input -->
-          <label for="quantity">Quantity:</label>
-          <input type="text" name="quantity" value="<%=game.quantity%>" />
+            <div id="edit-showimage">
+              <img src="/images/nes-carts/<%= game.smallimage %>" />
+            </div>
 
-          <input type="submit" value="Submit">
+            <!-- Text line for file name with browse button -->
+            <div id="edit-smallimage">
+              <p><label for="smallimage">Small Image File</label></p>
+              <input type="text" name="smallimage" value="<%=game.smallimage%>" />
+            </div>
 
-        <form>
+            <!-- Text line for file name with browse button -->
+            <!-- <label for="largeimage">Large Image:</label>
+            <input type="text" name="largeimage" value="<%=game.largeimage%>" /> -->
 
-        <button type="button" name="button">
-          <a href="/games">Back</a>
-        </button>
+            <!-- Dropdown with numeric listing from 1-5 -->
+            <div class="edit-bar">
+              <p><label for="rating">Rating (1-5)</label></p>
+              <input type="text" name="rating" value="<%=game.rating%>" />
+            </div>
+
+            <!-- Text line with numeric input -->
+            <div class="edit-bar">
+              <p><label for="price">Price</label></p>
+              $<input type="text" name="price" value="<%=game.price%>" />
+            </div>
+
+            <!-- Text line with numeric input -->
+            <div class="edit-bar">
+              <p><label for="quantity">Quantity</label></p>
+              <input type="text" name="quantity" value="<%=game.quantity%>" />
+            </div>
+
+            <input type="submit" value="Submit">
+
+            <button type="button" name="button">
+              <a href="/games">Back</a>
+            </button>
+
+          </div>
+
+        </form>
 
       </div>
 

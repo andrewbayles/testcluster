@@ -44,15 +44,15 @@
           </div>
 
           <div class="show-bar">
-            <p><%=game.rating%></p>
+            <p>Rating: <strong><%=game.rating%> out of 5</strong></p>
           </div>
 
           <div class="show-bar">
-            <p>$<%=game.price%></p>
+            <p>Price: <strong>$<%=game.price%></strong></p>
           </div>
 
           <div class="show-bar">
-            <p><%=game.quantity%></p>
+            <p>Available: <strong><%=game.quantity%></strong></p>
           </div>
 
         </div>
@@ -60,20 +60,24 @@
       </div>
 
       <!-- The following should appear only when a user is logged in. -->
-      <% if (currentUser) { %>
-        <div id="action-bar">
 
-          <button type="button" name="button"><a href="/games/<%=game._id%>/edit">Edit</a></button>
-          <form action="/games/<%=game._id%>?_method=DELETE" method="POST">
-            <input type="submit" value="DELETE"/>
-          </form>
+      <div id="action-bar">
 
-        </div>
-      <% } %>
+        <% if (currentUser) { %>
 
-      <button type="button" name="button">
-        <a href="/games">Back</a>
-      </button>
+            <button class="edit-button" type="button" name="button"><a href="/games/<%=game._id%>/edit">EDIT</a></button>
+
+            <form action="/games/<%=game._id%>?_method=DELETE" method="POST">
+              <input type="submit" value="DELETE"/>
+            </form>
+
+        <% } %>
+
+        <button class="back-button" type="button" name="button">
+          <a href="/games">BACK</a>
+        </button>
+
+      </div>
 
     </div>
 
