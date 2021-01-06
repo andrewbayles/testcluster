@@ -14,58 +14,76 @@
         <%- include ('../partials/nav.ejs') %>
       </header>
 
-      <div id="new-main">
-
-        <h1>New Game</h1>
+      <div id="edit-main">
 
         <form action="/games" method="POST">
 
-          <!-- Basic text line -->
-          <label for="title">Title:</label>
-          <input type="text" name="title" required />
+          <div id="edit-col-1">
 
-          <!-- Text line for file name with browse button -->
-          <label for="smallimage">Small Image:</label>
-          <input type="text" name="smallimage" />
+            <h2>New Game</h2>
 
-          <!-- Text line for file name with browse button -->
-          <!-- <label for="largeimage">Large Image:</label>
-          <input type="text" name="largeimage" /> -->
+            <!-- Basic text line -->
+            <div id="edit-title">
+              <p><label for="title">Title</label></p>
+              <input type="text" name="title" required />
+            </div>
 
-          <!-- Dropdown with genre listings -->
-          <label for="genre">Genre:</label>
-          <input type="text" name="genre" />
+            <!-- Dropdown with genre listings -->
+            <div id="edit-genre">
+              <p><label for="genre">Genre</label></p>
+              <input type="text" name="genre" />
+            </div>
 
-          <!-- Dropdown with system listings -->
-          <label for="system">System:</label>
-          <input type="text" name="system" />
+            <!-- Dropdown with system listings -->
+            <!-- <label for="system">System:</label>
+            <input type="text" name="system" /> -->
 
-          <!-- Large text box for extended input -->
-          <label for="summary">Summary:</label>
-          <textarea id="summary" name="summary"></textarea>
+            <!-- Large text box for extended input -->
+            <div id="edit-summary">
+              <p><label for="summary">Summary</label></p>
+              <textarea id="summary" name="summary"></textarea>
+            </div>
 
-          <!-- Dropdown with numeric listing from 1-5 -->
-          <label for="rating">Rating:</label>
-          <input type="text" name="rating" />
-
-          <!-- Text line with numeric input -->
-          <label for="price">Price:</label>
-          <p>$</p><input type="text" name="price" />
-
-          <!-- Text line with numeric input -->
-          <label for="quantity">Quantity:</label>
-          <input type="text" name="quantity" />
-          <br/>
-
-          <!-- <div>
-            <label for="readyToEat">
-              <input type="checkbox" id="readyToEat" name="readyToEat" />
-              <span>Is Ready to Eat</span>
-            </label>
           </div>
-          <br/> -->
 
-          <input type="submit" value="Submit">
+          <div id="edit-col-2">
+
+            <!-- Text line for file name with browse button -->
+            <div id="edit-smallimage">
+              <p><label for="smallimage">Image</label></p>
+              <input type="text" name="smallimage" />
+            </div>
+
+            <!-- Text line for file name with browse button -->
+            <!-- <label for="largeimage">Large Image:</label>
+            <input type="text" name="largeimage" /> -->
+
+            <!-- Dropdown with numeric listing from 1-5 -->
+            <div class="edit-bar">
+              <p><label for="rating">Rating (1-5)</label></p>
+              <input type="text" name="rating" />
+            </div>
+
+            <!-- Text line with numeric input -->
+            <div class="edit-bar">
+              <p><label for="price">Price ($)</label></p>
+              <input type="text" name="price" />
+            </div>
+
+            <!-- Text line with numeric input -->
+            <div class="edit-bar">
+              <p><label for="quantity">Quantity</label></p>
+              <input type="text" name="quantity" />
+            </div>
+
+            <input id="edit-submit" type="submit" value="Submit">
+
+            <button id="edit-back" type="button" name="button">
+              <a href="/games">Back</a>
+            </button>
+
+          </div>
+
         <form>
 
       </div>

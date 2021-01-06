@@ -12,18 +12,14 @@ const isAuthenticated = (req, res, next) => {
 
 // NEW
 games.get('/new', (req, res) => {
-
   if (req.session.currentUser) {
-
     res.render(
       'games/new.ejs', {
       currentUser: req.session.currentUser
     })
-
   } else {
     res.redirect('/sessions/new')
   }
-
 })
 
 // EDIT
@@ -45,31 +41,16 @@ games.delete('/:id', (req, res) => {
 
 // SHOW
 games.get('/:id', (req, res) => {
-
-  // if (req.session.currentUser) {
-
-    Game.findById(req.params.id, (error, foundGame) => {
-      res.render('games/show.ejs', {
-        game: foundGame
-        ,currentUser: req.session.currentUser
-      })
+  Game.findById(req.params.id, (error, foundGame) => {
+    res.render('games/show.ejs', {
+      game: foundGame
+      ,currentUser: req.session.currentUser
     })
-
-  // } else {
-  //   res.redirect('/sessions/new')
-  // }
-
+  })
 })
 
 // UPDATE
 games.put('/:id', (req, res) => {
-
-  // if (req.body.readyToEat === 'on') {
-  //   req.body.readyToEat = true
-  // } else {
-  //   req.body.readyToEat = false
-  // }
-
   Game.findByIdAndUpdate(
     req.params.id,
     req.body,
@@ -82,13 +63,6 @@ games.put('/:id', (req, res) => {
 
 // CREATE
 games.post('/', (req, res) => {
-
-  // if (req.body.readyToEat === 'on') {
-  //   req.body.readyToEat = true
-  // } else {
-  //   req.body.readyToEat = false
-  // }
-
   Game.create(req.body, (error, createdGame) => {
     res.redirect('/games')
   })

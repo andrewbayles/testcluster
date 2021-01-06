@@ -491,16 +491,19 @@ fieldset.user-info {
 
 #edit-main form {
   width: 100%;
+  display: flex;
 }
 
 #edit-col-1 {
   width: 60%;
   padding: 10px;
+  display: block;
 }
 
 #edit-col-2 {
-  width: 40%;
+  width: 30%;
   padding: 10px;
+  display: block;
 }
 
 #edit-title {
@@ -519,6 +522,14 @@ fieldset.user-info {
 
 }
 
+#edit-genre input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #DDD;
+  font-family: Arial, sans-serif;
+}
+
 #edit-summary {
 
 }
@@ -527,21 +538,64 @@ fieldset.user-info {
 
 }
 
+#edit-showimage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#edit-showimage img {
+  margin: auto;
+  display: inline-block;
+}
+
 #edit-smallimage {
 
 }
 
-#edit-bar {
-
+#edit-smallimage p {
+  margin-bottom: 6px;
 }
 
-#edit-main textarea {
-  height: 160px;
+#edit-smallimage input {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
   border: 1px solid #DDD;
   font-family: Arial, sans-serif;
+}
+
+.edit-bar {
+
+}
+
+.edit-bar p {
+  margin-bottom: 6px;
+}
+
+.edit-bar input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #DDD;
+  font-family: Arial, sans-serif;
+}
+
+#edit-main textarea {
+  height: 300px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #DDD;
+  font-family: Arial, sans-serif;
+}
+
+#edit-submit {
+
+}
+
+#edit-back {
+  
 }
 
 #new-main textarea {
