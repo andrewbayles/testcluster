@@ -12,7 +12,6 @@ Steps to initialize the project working environment:
 1. Link the project's Git repo to the project's Heroku server. DONE
 2. Set up separate controller routes, for users, games, and sessions. DONE
 3. Initialize starting file structure for models, views, and controllers. DONE
-4.
 
 
 DATABASE
@@ -43,15 +42,10 @@ FRONTEND
 3. Apply individual page CSS themes.
   3a. Created CSS for front page.
   3b. Created CSS for Login and New User pages.
-
-** MAKE NOTE OF CSS SOURCE HERE **
-
-3. Collect external content (screenshots, game titles) for use with site.
-  3a. Smaller NES/SNES cartridge images
-  3b. Larger NES/SNES cartridge titles
-4. Add games' summaries (source: wikipedia.org) to the records of each game.
-
-  ** SITE SOURCE OF GAME CONTENT HERE **
+4. Collect external content (screenshots, game titles) for use with site.
+  4a. Smaller NES/SNES cartridge images
+  4b. Larger NES/SNES cartridge titles
+5. Add games' summaries (source: wikipedia.org) to the records of each game.
 
 
 ONGOING ISSUES
@@ -67,5 +61,3 @@ OVERCOME CHALLENGES
 NEW DISCOVERIES
 
 1. I learned that https://stripesgenerator.com/ is a beautiful source for generating diagonal-striped backgrounds of all colors and widths.
-
-2. ** INCLUDE INFO ABOUT DARKENING BANNER IMAGE VIA CSS **
